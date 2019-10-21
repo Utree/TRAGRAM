@@ -10,8 +10,8 @@ import UIKit
 
 class PostViewController: UIViewController {
 
-    @IBOutlet weak var postImage: UIButton!
     @IBOutlet weak var postTextView: UITextView!
+    @IBOutlet weak var postImageView: UIImageView!
     
     let vc = UIImagePickerController()
     
@@ -24,14 +24,6 @@ class PostViewController: UIViewController {
         vc.sourceType = UIImagePickerController.SourceType.photoLibrary
 
     }
-    @IBAction func imageButton(_ sender: Any) {
-        print("tapped")
-        self.present(vc, animated: true, completion: nil)
-    }
-    
-    @IBAction func postButton(_ sender: Any) {
-    }
-    
     /*
      * テキスト入力時に他の場所を押したらキーボードを閉じる
      */
@@ -49,15 +41,18 @@ class PostViewController: UIViewController {
     }
     */
 
+    @IBAction func touchImageView(_ sender: UITapGestureRecognizer) {
+        self.present(vc, animated: true, completion: nil)
+    }
 }
 
 extension PostViewController:UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    private func imagePickerController(_ picker: UIImagePickerController,
-    didFinishPickingMediaWithInfo info: [String : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         // Get the image captured by the UIImagePickerController
-//        let originalImage = info[UIImagePickerControllerOriginalImage] as! UIImage
-//        let editedImage = info[UIImagePickerControllerEditedImage] as! UIImage
+        
+        // 画像を適用
+        postImageView.image = info[.editedImage] as? UIImage
 
         // Do something with the images (based on your use case)
 

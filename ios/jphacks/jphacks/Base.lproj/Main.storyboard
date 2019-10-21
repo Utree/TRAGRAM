@@ -224,7 +224,6 @@
         <!--RECOMEND-->
         <scene sceneID="HFb-1H-Xl8">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ATB-yv-OlP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="searchScene" id="c42-oh-RxF" customClass="SearchViewController" customModule="jphacks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hxj-ex-oVt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -244,6 +243,7 @@
                         <outlet property="recommendTable" destination="Yh8-Sh-cqX" id="Gk8-qE-6k1"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ATB-yv-OlP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3792.753623188406" y="148.66071428571428"/>
         </scene>
@@ -347,28 +347,30 @@
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-n7-Rct">
-                                <rect key="frame" x="133" y="261" width="152" height="48"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="save.png" translatesAutoresizingMaskIntoConstraints="NO" id="42b-h3-4g7">
+                                <rect key="frame" x="85" y="248" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="画像を追加">
-                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <gestureRecognizers/>
                                 <connections>
-                                    <action selector="imageButton:" destination="mC3-o6-m21" eventType="touchUpInside" id="fqf-JL-VWU"/>
+                                    <outletCollection property="gestureRecognizers" destination="J63-UL-8nG" appends="YES" id="JR1-uh-dKg"/>
                                 </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="8q9-xK-LHg"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="POST" image="pencil.tip" catalog="system" id="tO1-8k-YBO"/>
                     <connections>
-                        <outlet property="postImage" destination="ugD-n7-Rct" id="i0r-D0-nj6"/>
+                        <outlet property="postImageView" destination="42b-h3-4g7" id="USq-O7-T9F"/>
                         <outlet property="postTextView" destination="pVb-Jg-PDe" id="jJD-Ba-mRF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V80-VA-l9S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="J63-UL-8nG">
+                    <connections>
+                        <action selector="touchImageView:" destination="mC3-o6-m21" id="D3L-dB-9JE"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3792.753623188406" y="922.76785714285711"/>
         </scene>
@@ -408,6 +410,7 @@
         <image name="pencil.tip" catalog="system" width="48" height="64"/>
         <image name="person" catalog="system" width="64" height="58"/>
         <image name="person.circle" catalog="system" width="64" height="60"/>
+        <image name="save.png" width="331" height="26"/>
         <image name="ログイン.png" width="527" height="142"/>
         <image name="投稿.png" width="527" height="142"/>
         <image name="登録.png" width="526" height="141"/>
