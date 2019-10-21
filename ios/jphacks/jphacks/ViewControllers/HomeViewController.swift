@@ -30,7 +30,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Alamofire.request("http://34.203.188.126:8000/v1/user/").response { response in
+        Alamofire.request("http://localhost:8000/v1/user/").response { response in
             let decoder = JSONDecoder()
             
             guard let data = response.data else { return }
