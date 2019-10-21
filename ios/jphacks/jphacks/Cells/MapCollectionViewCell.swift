@@ -36,10 +36,6 @@ class MapCollectionViewCell: UICollectionViewCell, MKMapViewDelegate {
         
         // 表示領域を設定
         setMapArea(lat: 34.685219, long: 135.199402)
-        
-//        // ピンを刺す
-//        addPin(lat: 34.685219, long: 135.199402, title: "JPHACKS 神戸会場")
-//        addPin(lat: 34.690018, long: 135.186998, title: "元町駅")
     }
         
         /*

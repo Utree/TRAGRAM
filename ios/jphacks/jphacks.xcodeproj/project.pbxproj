@@ -12,7 +12,6 @@
 		3FAC16D8235BF27700787800 /* MapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC16D6235BF27700787800 /* MapCollectionViewCell.swift */; };
 		3FAC16D9235BF27700787800 /* MapCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FAC16D7235BF27700787800 /* MapCollectionViewCell.xib */; };
 		3FAC16DB235C016D00787800 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC16DA235C016D00787800 /* Item.swift */; };
-		3FAC16DD235C114500787800 /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC16DC235C114500787800 /* PostResponse.swift */; };
 		3FAC16DF235C172900787800 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC16DE235C172900787800 /* User.swift */; };
 		3FF32846235AA9A90065FF66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF32845235AA9A90065FF66 /* AppDelegate.swift */; };
 		3FF32848235AA9A90065FF66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF32847235AA9A90065FF66 /* SceneDelegate.swift */; };
@@ -60,7 +59,6 @@
 		3FAC16D6235BF27700787800 /* MapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCollectionViewCell.swift; sourceTree = "<group>"; };
 		3FAC16D7235BF27700787800 /* MapCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapCollectionViewCell.xib; sourceTree = "<group>"; };
 		3FAC16DA235C016D00787800 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		3FAC16DC235C114500787800 /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
 		3FAC16DE235C172900787800 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3FF32842235AA9A90065FF66 /* jphacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jphacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF32845235AA9A90065FF66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -200,7 +198,6 @@
 				3FF32877235B1E3C0065FF66 /* UserAuthInfo.swift */,
 				3FAC16DA235C016D00787800 /* Item.swift */,
 				3FAC16DE235C172900787800 /* User.swift */,
-				3FAC16DC235C114500787800 /* PostResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -395,7 +392,6 @@
 				3FF3284A235AA9A90065FF66 /* ViewController.swift in Sources */,
 				3FAC16DB235C016D00787800 /* Item.swift in Sources */,
 				3FF32846235AA9A90065FF66 /* AppDelegate.swift in Sources */,
-				3FAC16DD235C114500787800 /* PostResponse.swift in Sources */,
 				3FF3286B235AB6FC0065FF66 /* CollectionTableViewCell.swift in Sources */,
 				3FF32869235AB44B0065FF66 /* MapTableViewCell.swift in Sources */,
 				3FF32848235AA9A90065FF66 /* SceneDelegate.swift in Sources */,

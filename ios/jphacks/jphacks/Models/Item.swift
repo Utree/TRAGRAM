@@ -9,14 +9,13 @@
 import Foundation
 
 
-struct Item {
-    let name: String
-    let discription: String
-    let image_path: String
-    
-    init(name: String, discription: String, image_path: String){
-        self.name = name as String
-        self.discription = discription as String
-        self.image_path = image_path as String
-    }
+struct Item:Codable {
+    let id: Int
+    let user_id: Int
+    let date: String
+    let text: String
+    let img_url: String
+    let map_lat: String
+    let map_lon: String
+    let like_cnt: Int
 }

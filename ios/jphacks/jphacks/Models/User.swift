@@ -8,12 +8,7 @@
 
 import Foundation
 
-struct User {
+struct User:Codable {
     let account_name: String
     let password: String
-    
-    init(account_name: String, password: String){
-        self.account_name = account_name as String
-        self.password = password as String
-    }
 }
